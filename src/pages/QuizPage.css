@@ -1,0 +1,29 @@
+.quiz{
+    display: grid;
+    gap: 20%;
+    grid-template-columns: 1fr 15%;
+    grid-template-rows: repeat(2, auto);
+    max-height: 1500px;
+    max-width: 1500px;
+    padding-top: 5rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.main__containter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5rem;
+    align-items: center;
+}
+
+.question{
+    /* background-color: rgb(26, 136, 231); */
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}

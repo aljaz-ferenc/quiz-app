@@ -1,0 +1,14 @@
+.klic__container{
+    background-color: black;
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.klic__text{
+    max-width: 70%;
+    line-height: 2;
+}

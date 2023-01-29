@@ -1,0 +1,36 @@
+.answers__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 136, 231);
+    height: 4rem; 
+    width: 20rem;
+    cursor: pointer;
+
+}
+
+.answer:hover{
+    background-color: rgb(252, 122, 0);
+}
+
+.correct-answer{
+    background-color: rgb(1, 233, 107);
+}
+
+.correct-answer:hover{
+    background-color: rgb(1, 233, 107);
+}
+
+.wrong-answer{
+    background-color: rgb(188, 1, 1);
+}
+.wrong-answer:hover{
+    background-color: rgb(188, 1, 1);
+}

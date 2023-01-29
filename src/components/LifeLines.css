@@ -1,0 +1,48 @@
+.life-lines{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 50rem;
+}
+
+.life-line.disabled{
+    text-decoration: line-through;
+}
+
+.life-lines div{
+    background-position: center;
+    background-size: cover;
+    height: 3rem;
+    aspect-ratio: 343 / 266;
+    cursor: pointer;
+}
+.life-lines div:hover{
+    outline: 2px solid rgb(188, 1, 1);
+    border-radius: 50%;
+}
+
+.life-lines div:first-child{
+    background-image: url('../images/klic.webp');
+}
+.life-lines div:nth-child(2){
+    background-image: url('../images/glas.webp');
+}
+.life-lines div:nth-child(3){
+    background-image: url('../images/polovicka.webp');
+}
+
+.life-lines div.disabled{
+    outline: none;
+    cursor: not-allowed;
+}
+
+.life-lines div.disabled:first-child{
+    background-image: url('../images/klic-used.webp');
+}
+.life-lines div.disabled:nth-child(2){
+    background-image: url('../images/glas-used.webp');
+}
+.life-lines div.disabled:nth-child(3){
+    background-image: url('../images/polovicka-used.webp');
+}
+
