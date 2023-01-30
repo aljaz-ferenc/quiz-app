@@ -8,12 +8,14 @@ import { useEffect } from "react";
 import questions from "../questions/questions";
 import Answers from "./Answers";
 import KlicVSili from "../components/KlicVSili";
+import Glas from "../components/Glas";
 
 export default function QuizPage() {
   const difficulty = useSelector((state) => state.difficulty.difficulty);
   const gameStatus = useSelector((state) => state.difficulty.status);
   const [activeLifeLine, setActiveLifeLine] = useState(null);
   const question = questions[difficulty - 1].question;
+  const dispatch = useDispatch();
 
   //initial state
   const [lifeLine, setLifeLine] = useState({
@@ -61,23 +63,31 @@ export default function QuizPage() {
     setActiveLifeLine(null);
   }, [difficulty, setActiveLifeLine]);
 
+  useEffect(() => {
+    if (gameStatus === "win") {
+      setTimeout(() => {
+        dispatch(difficultyActions.reset());
+      }, 500);
+    }
+  }, [gameStatus]);
 
   return (
-    <div className="quiz">
-      <div className="main__containter">
-        <LifeLines
-          lifeLine={lifeLine}
-          selectLifeLineHandler={selectLifeLineHandler}
-        />
-        <div className="question">{question}</div>
-          <Answers 
-          activeLifeLine={activeLifeLine}
+    <>
+      <div className="quiz">
+        <div className="main__containter">
+          <LifeLines
+            lifeLine={lifeLine}
+            selectLifeLineHandler={selectLifeLineHandler}
           />
+          <div className="question">{question}</div>
+          <Answers activeLifeLine={activeLifeLine} />
+        </div>
+        <Money />
       </div>
-      <Money />
-      {activeLifeLine === 'klic' && <KlicVSili
-        activeLifeLine={activeLifeLine}
-      />}
-    </div>
+      {activeLifeLine === "klic" && (
+        <KlicVSili activeLifeLine={activeLifeLine} />
+      )}
+      {activeLifeLine === "glas" && <Glas activeLifeLine={activeLifeLine} />}
+    </>
   );
 }

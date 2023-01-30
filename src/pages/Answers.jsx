@@ -18,7 +18,6 @@ const answerVariants ={
     transition: {
       duration: 1,
     }
-
   }
 }
 

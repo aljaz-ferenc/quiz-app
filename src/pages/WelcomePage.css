@@ -1,14 +1,13 @@
-.over{
-    text-align: center;
+.welcome{
+    margin: 0 auto;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin: 0 auto;
-    padding: 10rem 0;
+    gap: 3rem;
+    padding: 5rem;
 }
 
-.over__button{
+.start-btn{
     color: #fff;
     background: linear-gradient(to bottom right, #485563, #29323c);
     padding: 1rem 3rem;
@@ -16,7 +15,8 @@
     width: fit-content;
 }
 
-.over__button:hover{
+.start-btn:hover{
     background: linear-gradient(to bottom right, #2b323a, #15191e);
     color: #fff;
+
 }

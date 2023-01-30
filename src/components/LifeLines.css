@@ -33,7 +33,7 @@
 
 .life-lines div.disabled{
     outline: none;
-    cursor: not-allowed;
+    cursor:auto;
 }
 
 .life-lines div.disabled:first-child{

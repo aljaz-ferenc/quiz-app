@@ -3,9 +3,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to bottom right, #485563, #29323c);
+    padding: 0 2rem;
+    border-radius: 10px;
+    max-width: 200px;
 }
 
 .money__container div{
+    padding: 0 2rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -43,5 +48,15 @@
         background-color: transparent;
     }90%{
         background-color: rgb(252, 122, 0);
+    }
+}
+
+@media (max-width: 1100px){
+    .money__container{
+        padding: 0 1rem ;
+    }
+    .money__container div{
+        padding: 0 1rem ;
+        width: 100%;
     }
 }

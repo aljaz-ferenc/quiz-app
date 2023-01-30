@@ -1,22 +1,21 @@
-.over{
+.win{
     text-align: center;
+    padding: 5rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin: 0 auto;
-    padding: 10rem 0;
 }
 
-.over__button{
+.win__button{
     color: #fff;
     background: linear-gradient(to bottom right, #485563, #29323c);
     padding: 1rem 3rem;
     border-radius: 3px;
-    width: fit-content;
+    width: fit-content;   
 }
 
-.over__button:hover{
+.win__button:hover{
     background: linear-gradient(to bottom right, #2b323a, #15191e);
     color: #fff;
 }

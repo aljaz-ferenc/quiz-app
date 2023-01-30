@@ -1,14 +1,31 @@
 .klic__container{
-    background-color: black;
-    width: 100%;
+    background: linear-gradient(to bottom right, #485563, #29323c);
+    width: 90%;
     height: 10rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .klic__text{
     max-width: 70%;
     line-height: 2;
+}
+
+.klic__text span{
+    font-style: italic;
+}
+
+.klic__image{
+    height: 3rem;
+    aspect-ratio: 343 / 266;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -20%);
 }

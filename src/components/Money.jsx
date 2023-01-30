@@ -45,7 +45,6 @@ export default function Money() {
       animate="visible"
       initial="hidden"
     >
-      <div>LOGO</div>
       {money.map((item, i, arr) => (
         <motion.div variants={childVariants} className={moneyClass(i, arr)} key={i}>
           {item + '€'}

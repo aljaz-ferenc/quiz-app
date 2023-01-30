@@ -3,6 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 4rem;
+    overflow: hidden;
 }
 
 .answer{
@@ -13,7 +14,12 @@
     height: 4rem; 
     width: 20rem;
     cursor: pointer;
+    transition: transform .1s;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.427);
+}
 
+.answer:active{
+    transform: translateY(2px);
 }
 
 .answer:hover{
@@ -33,4 +39,14 @@
 }
 .wrong-answer:hover{
     background-color: rgb(188, 1, 1);
+}
+
+@media (max-width: 1100px){
+    .answers__container{
+        gap: 1rem;
+    }
+    .answer{
+        width: 10rem;
+        height: 3rem;
+    }
 }
