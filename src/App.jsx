@@ -21,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="main-header">Lepo je biti bogat</h1>
     <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.key}>
         <Route path="/" element={<WelcomePage />} />

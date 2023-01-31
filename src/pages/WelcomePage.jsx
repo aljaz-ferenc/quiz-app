@@ -32,7 +32,6 @@ export default function WelcomePage() {
       animate="animate"
       className="welcome"
     >
-      <h1>Lepo je biti bogat</h1>
       <div className="welcome__rules">
         <h2>Pravila igre</h2>
         <p>

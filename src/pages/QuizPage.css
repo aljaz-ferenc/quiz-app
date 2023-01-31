@@ -3,8 +3,9 @@
     place-content: center;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    padding-top: 5rem;
+    padding-top: 2rem;
     margin: 5rem auto;
+    margin-top: 2rem;
     gap: 3rem;
     width: 90vw;
 
